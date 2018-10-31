@@ -31,6 +31,7 @@ vagrant ssh
 ```
 # mkdir -p /vagrant/terraform.d/plugins/linux_amd64
 # cp ~/go/bin/terraform-provider-extip /vagrant/terraform.d/plugins/linux_amd64/
+# cd /vagrant
 ```
 5. Test that it works:
 ```

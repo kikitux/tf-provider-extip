@@ -38,3 +38,15 @@ vagrant ssh
 # terraform init  
 # terraform apply
 ```
+6. The output should be as follow:
+```
+vagrant@xenial64:/vagrant$ terraform apply
+data.extip.external_ip: Refreshing state...
+
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+external_ip = X.X.X.X
+```
+- X.X.X.X - this is placeholder of current external IP address.

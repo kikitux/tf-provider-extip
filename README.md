@@ -49,4 +49,4 @@ Outputs:
 
 external_ip = X.X.X.X
 ```
-- X.X.X.X - this is placeholder of current external IP address.
+- X.X.X.X - this is a placeholder of current external IP address.

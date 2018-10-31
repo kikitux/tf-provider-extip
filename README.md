@@ -3,7 +3,7 @@
 ### Requirments
 
 1. [Vagrant](https://www.vagrantup.com/) installed - it's needed since plugin will be compiled in the VM.
-2. [Virtual Box](https://www.virtualbox.org/)
+2. [Virtual Box](https://www.virtualbox.org/) installed.
 3. A basic knowledge about [Terraform](https://www.terraform.io/).
 ### More info could be found on following repo:
 

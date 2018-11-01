@@ -1,0 +1,89 @@
+I, [2018-11-01T12:17:56.440338 #6430]  INFO -- default-ubuntu-1604: -----> Cleaning up any prior instances of <default-ubuntu-1604>
+I, [2018-11-01T12:17:56.442114 #6430]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+W, [2018-11-01T12:17:56.443441 #6430]  WARN -- default-ubuntu-1604: Running command `terraform init -input=false -lock=true -lock-timeout=0s  -force-copy -backend=true  -get=true -get-plugins=true  -verify-plugins=true` in directory /vagrant
+I, [2018-11-01T12:17:56.514049 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:17:56.514710 #6430]  INFO -- default-ubuntu-1604: [0m[1mInitializing provider plugins...[0m
+I, [2018-11-01T12:17:56.948069 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:17:56.949459 #6430]  INFO -- default-ubuntu-1604: [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+W, [2018-11-01T12:17:56.974249 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace select kitchen-terraform-default-ubuntu-1604` in directory /vagrant
+I, [2018-11-01T12:17:57.041958 #6430]  INFO -- default-ubuntu-1604: [31m
+I, [2018-11-01T12:17:57.043158 #6430]  INFO -- default-ubuntu-1604: Workspace "kitchen-terraform-default-ubuntu-1604" doesn't exist.
+I, [2018-11-01T12:17:57.043398 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:17:57.043549 #6430]  INFO -- default-ubuntu-1604: You can create this workspace with the "new" subcommand.[0m[0m
+W, [2018-11-01T12:17:57.044504 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace new kitchen-terraform-default-ubuntu-1604` in directory /vagrant
+I, [2018-11-01T12:17:57.107170 #6430]  INFO -- default-ubuntu-1604: [0m[32m[1mCreated and switched to workspace "kitchen-terraform-default-ubuntu-1604"![0m[32m
+I, [2018-11-01T12:17:57.107729 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:17:57.109081 #6430]  INFO -- default-ubuntu-1604: You're now on a new, empty workspace. Workspaces isolate their state,
+I, [2018-11-01T12:17:57.109973 #6430]  INFO -- default-ubuntu-1604: so if you run "terraform plan" Terraform will not see any existing state
+I, [2018-11-01T12:17:57.111106 #6430]  INFO -- default-ubuntu-1604: for this configuration.[0m
+W, [2018-11-01T12:17:57.134509 #6430]  WARN -- default-ubuntu-1604: Running command `terraform destroy -auto-approve -lock=true -lock-timeout=0s -input=false  -parallelism=10 -refresh=true  ` in directory /vagrant
+I, [2018-11-01T12:17:57.640969 #6430]  INFO -- default-ubuntu-1604: [0m[1mdata.extip.external_ip: Refreshing state...[0m
+I, [2018-11-01T12:17:58.646404 #6430]  INFO -- default-ubuntu-1604: [0m[1m[32m
+I, [2018-11-01T12:17:58.647168 #6430]  INFO -- default-ubuntu-1604: Destroy complete! Resources: 0 destroyed.[0m
+W, [2018-11-01T12:17:58.675486 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace select default` in directory /vagrant
+I, [2018-11-01T12:17:58.729610 #6430]  INFO -- default-ubuntu-1604: [0m[32mSwitched to workspace "default".[0m
+W, [2018-11-01T12:17:58.754949 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace delete kitchen-terraform-default-ubuntu-1604` in directory /vagrant
+I, [2018-11-01T12:17:58.818422 #6430]  INFO -- default-ubuntu-1604: [0m[32mDeleted workspace "kitchen-terraform-default-ubuntu-1604"![0m
+I, [2018-11-01T12:17:58.845618 #6430]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m2.40s).
+I, [2018-11-01T12:17:58.849263 #6430]  INFO -- default-ubuntu-1604: -----> Testing <default-ubuntu-1604>
+I, [2018-11-01T12:17:58.851585 #6430]  INFO -- default-ubuntu-1604: -----> Creating <default-ubuntu-1604>...
+W, [2018-11-01T12:17:58.853309 #6430]  WARN -- default-ubuntu-1604: Running command `terraform init -input=false -lock=true -lock-timeout=0s  -upgrade -force-copy -backend=true  -get=true -get-plugins=true  -verify-plugins=true` in directory /vagrant
+I, [2018-11-01T12:17:58.911804 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:17:58.912762 #6430]  INFO -- default-ubuntu-1604: [0m[1mInitializing provider plugins...[0m
+I, [2018-11-01T12:17:59.247923 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:17:59.248802 #6430]  INFO -- default-ubuntu-1604: [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+W, [2018-11-01T12:17:59.272859 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace select kitchen-terraform-default-ubuntu-1604` in directory /vagrant
+I, [2018-11-01T12:17:59.318853 #6430]  INFO -- default-ubuntu-1604: [31m
+I, [2018-11-01T12:17:59.319448 #6430]  INFO -- default-ubuntu-1604: Workspace "kitchen-terraform-default-ubuntu-1604" doesn't exist.
+I, [2018-11-01T12:17:59.320162 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:17:59.320729 #6430]  INFO -- default-ubuntu-1604: You can create this workspace with the "new" subcommand.[0m[0m
+W, [2018-11-01T12:17:59.343390 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace new kitchen-terraform-default-ubuntu-1604` in directory /vagrant
+I, [2018-11-01T12:17:59.398969 #6430]  INFO -- default-ubuntu-1604: [0m[32m[1mCreated and switched to workspace "kitchen-terraform-default-ubuntu-1604"![0m[32m
+I, [2018-11-01T12:17:59.399604 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:17:59.400277 #6430]  INFO -- default-ubuntu-1604: You're now on a new, empty workspace. Workspaces isolate their state,
+I, [2018-11-01T12:17:59.400777 #6430]  INFO -- default-ubuntu-1604: so if you run "terraform plan" Terraform will not see any existing state
+I, [2018-11-01T12:17:59.401903 #6430]  INFO -- default-ubuntu-1604: for this configuration.[0m
+I, [2018-11-01T12:17:59.428066 #6430]  INFO -- default-ubuntu-1604: Finished creating <default-ubuntu-1604> (0m0.57s).
+I, [2018-11-01T12:17:59.429936 #6430]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
+W, [2018-11-01T12:17:59.432316 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace select kitchen-terraform-default-ubuntu-1604` in directory /vagrant
+W, [2018-11-01T12:17:59.511093 #6430]  WARN -- default-ubuntu-1604: Running command `terraform get -update` in directory /vagrant
+W, [2018-11-01T12:17:59.560979 #6430]  WARN -- default-ubuntu-1604: Running command `terraform validate -check-variables=true   ` in directory /vagrant
+W, [2018-11-01T12:18:00.055092 #6430]  WARN -- default-ubuntu-1604: Running command `terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true  ` in directory /vagrant
+I, [2018-11-01T12:18:00.527221 #6430]  INFO -- default-ubuntu-1604: [0m[1mdata.extip.external_ip: Refreshing state...[0m
+I, [2018-11-01T12:18:01.277342 #6430]  INFO -- default-ubuntu-1604: [0m[1m[32m
+I, [2018-11-01T12:18:01.278219 #6430]  INFO -- default-ubuntu-1604: Apply complete! Resources: 0 added, 0 changed, 0 destroyed.[0m
+I, [2018-11-01T12:18:01.280602 #6430]  INFO -- default-ubuntu-1604: [0m[1m[32m
+I, [2018-11-01T12:18:01.281173 #6430]  INFO -- default-ubuntu-1604: Outputs:
+I, [2018-11-01T12:18:01.282098 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:18:01.282508 #6430]  INFO -- default-ubuntu-1604: external_ip = 194.141.252.138[0m
+W, [2018-11-01T12:18:01.308863 #6430]  WARN -- default-ubuntu-1604: Running command `terraform output -json` in directory /vagrant
+I, [2018-11-01T12:18:01.363533 #6430]  INFO -- default-ubuntu-1604: {
+I, [2018-11-01T12:18:01.364240 #6430]  INFO -- default-ubuntu-1604:     "external_ip": {
+I, [2018-11-01T12:18:01.364505 #6430]  INFO -- default-ubuntu-1604:  "sensitive": false,
+I, [2018-11-01T12:18:01.364615 #6430]  INFO -- default-ubuntu-1604:  "type": "string",
+I, [2018-11-01T12:18:01.364757 #6430]  INFO -- default-ubuntu-1604:  "value": "194.141.252.138"
+I, [2018-11-01T12:18:01.365334 #6430]  INFO -- default-ubuntu-1604:     }
+I, [2018-11-01T12:18:01.365770 #6430]  INFO -- default-ubuntu-1604: }
+I, [2018-11-01T12:18:01.393429 #6430]  INFO -- default-ubuntu-1604: Finished converging <default-ubuntu-1604> (0m1.96s).
+I, [2018-11-01T12:18:01.394240 #6430]  INFO -- default-ubuntu-1604: -----> Setting up <default-ubuntu-1604>...
+I, [2018-11-01T12:18:01.399587 #6430]  INFO -- default-ubuntu-1604: Finished setting up <default-ubuntu-1604> (0m0.00s).
+I, [2018-11-01T12:18:01.401006 #6430]  INFO -- default-ubuntu-1604: -----> Verifying <default-ubuntu-1604>...
+I, [2018-11-01T12:18:01.494383 #6430]  INFO -- default-ubuntu-1604: Verifying default
+I, [2018-11-01T12:18:02.786087 #6430]  INFO -- default-ubuntu-1604: Finished verifying <default-ubuntu-1604> (0m1.38s).
+I, [2018-11-01T12:18:02.790206 #6430]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+W, [2018-11-01T12:18:02.794122 #6430]  WARN -- default-ubuntu-1604: Running command `terraform init -input=false -lock=true -lock-timeout=0s  -force-copy -backend=true  -get=true -get-plugins=true  -verify-plugins=true` in directory /vagrant
+I, [2018-11-01T12:18:02.868054 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:18:02.868697 #6430]  INFO -- default-ubuntu-1604: [0m[1mInitializing provider plugins...[0m
+I, [2018-11-01T12:18:03.236166 #6430]  INFO -- default-ubuntu-1604: 
+I, [2018-11-01T12:18:03.236926 #6430]  INFO -- default-ubuntu-1604: [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+W, [2018-11-01T12:18:03.260099 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace select kitchen-terraform-default-ubuntu-1604` in directory /vagrant
+W, [2018-11-01T12:18:03.335851 #6430]  WARN -- default-ubuntu-1604: Running command `terraform destroy -auto-approve -lock=true -lock-timeout=0s -input=false  -parallelism=10 -refresh=true  ` in directory /vagrant
+I, [2018-11-01T12:18:03.883558 #6430]  INFO -- default-ubuntu-1604: [0m[1mdata.extip.external_ip: Refreshing state...[0m
+I, [2018-11-01T12:18:04.625884 #6430]  INFO -- default-ubuntu-1604: [0m[1m[32m
+I, [2018-11-01T12:18:04.626275 #6430]  INFO -- default-ubuntu-1604: Destroy complete! Resources: 0 destroyed.[0m
+W, [2018-11-01T12:18:04.653923 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace select default` in directory /vagrant
+I, [2018-11-01T12:18:04.704589 #6430]  INFO -- default-ubuntu-1604: [0m[32mSwitched to workspace "default".[0m
+W, [2018-11-01T12:18:04.729728 #6430]  WARN -- default-ubuntu-1604: Running command `terraform workspace delete kitchen-terraform-default-ubuntu-1604` in directory /vagrant
+I, [2018-11-01T12:18:04.789495 #6430]  INFO -- default-ubuntu-1604: [0m[32mDeleted workspace "kitchen-terraform-default-ubuntu-1604"![0m
+I, [2018-11-01T12:18:04.819639 #6430]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m2.02s).
+I, [2018-11-01T12:18:04.821978 #6430]  INFO -- default-ubuntu-1604: Finished testing <default-ubuntu-1604> (0m8.38s).

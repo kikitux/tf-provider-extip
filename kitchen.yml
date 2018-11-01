@@ -1,0 +1,18 @@
+---
+driver:
+ name: terraform
+
+provisioner:
+ name: terraform
+
+platforms:
+ - name: ubuntu-16.04
+
+verifier:
+ name: terraform
+ systems:
+   - name: default
+     backend: local
+
+suites:
+ - name: default

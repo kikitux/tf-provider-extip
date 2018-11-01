@@ -1,3 +1,5 @@
 .vagrant/
 .terraform/
 terraform.tfstate*
+Gemfile.lock
+.kitchen

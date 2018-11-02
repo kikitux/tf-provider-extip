@@ -1,18 +1,22 @@
 ---
 driver:
- name: terraform
+  name: terraform
 
 provisioner:
- name: terraform
+  name: terraform
 
 platforms:
- - name: ubuntu-16.04
-
+  - name: ubuntu
+ 
 verifier:
- name: terraform
- systems:
-   - name: default
-     backend: local
+  name: terraform
+  systems:
+    - name: default
+      attrs_outputs:
+        terraform_external_ip: external_ip
+      backend: local
+      controls:
+      - check_string
 
 suites:
- - name: default
+  - name: default

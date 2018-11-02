@@ -50,3 +50,18 @@ Outputs:
 external_ip = X.X.X.X
 ```
 - X.X.X.X - is a placeholder of current external IP address.
+## To test with kitchen execute a following command:
+
+```
+kitchen test
+```
+
+The output should be:
+
+```
+Command: `terraform apply`
+     ✔  stdout should not match "nil"
+     ✔  stdout should not match "127.0.0.1"
+
+Test Summary: 2 successful, 0 failures, 0 skipped
+```

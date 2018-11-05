@@ -49,7 +49,6 @@ Outputs:
 
 external_ip = X.X.X.X
 ```
-- X.X.X.X - is a placeholder of current external IP address.
 ## To test with kitchen execute a following command:
 
 ```
@@ -59,9 +58,13 @@ kitchen test
 The output should be:
 
 ```
-Command: `terraform apply`
-     ✔  stdout should not match "nil"
-     ✔  stdout should not match "127.0.0.1"
+✔  check_string: X.X.X.X
+     ✔  X.X.X.X should not eq "nil"
+     ✔  X.X.X.X should not eq ""
+     ✔  X.X.X.X should not eq "default_value"
 
-Test Summary: 2 successful, 0 failures, 0 skipped
+
+Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
+Test Summary: 3 successful, 0 failures, 0 skipped
 ```
+- X.X.X.X - is a placeholder of current external IP address.

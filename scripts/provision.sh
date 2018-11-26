@@ -37,11 +37,3 @@ which terraform &>/dev/null || {
   unzip terraform_0.11.10_linux_amd64.zip
   popd
 }
-# install git ruby ruby-dev
-which git ruby ruby-dev &>/dev/null || {
-  apt-get install -y git ruby ruby-dev
-}
-su - vagrant
-cd /vagrant
-gem install bundler
-bundle install
